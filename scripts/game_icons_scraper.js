@@ -5,7 +5,7 @@ const fs = require('fs');
 const path = require('path');
 const scrapeIt = require('scrape-it');
 const process = require('process');
-process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = 0
+process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = 0;
 
 function hashString(s) {
   // http://stackoverflow.com/a/15710692

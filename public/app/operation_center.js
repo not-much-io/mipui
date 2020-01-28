@@ -281,8 +281,8 @@ class OperationCenter {
       this.recordOperationComplete();
       // A remote operation is ready and loaded. Since it's remote, it hasn't
       // been locally applied yet nor added to the undo stack, but since it may
-      // invalidate pending operations, before we add and apply it we temporarily
-      // undo and then try to re-apply the pending local ops.
+      // invalidate pending operations, before we add and apply
+      // it we temporarily undo and then try to re-apply the pending local ops.
       this.stopSendingPendingLocalOperations_();
       this.undoPendingOperations_();
       this.addOperation_(op);
@@ -303,7 +303,8 @@ class OperationCenter {
           // This means we applied all the remote ops that we know of. Mark the
           // status as ready and resume sending local pending ops.
           this.setStatus_(Status.READY);
-          // But first flush out the first pending operation, if it was accepted.
+          // But first flush out the first pending operation
+          // if it was accepted.
           if (this.opBeingSentWasAccepted_ &&
               this.pendingLocalOperations_.length > 0) {
             this.pendingLocalOperations_.shift();

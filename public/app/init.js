@@ -48,9 +48,9 @@ function initializeFirebase(callback) {
   };
   firebase.initializeApp(config);
   firebase.database.enableLogging(false);
-//  firebase.auth().onAuthStateChanged(user => {
-//    userChanged(user);
-//  });
+  //  firebase.auth().onAuthStateChanged(user => {
+  //    userChanged(user);
+  //  });
   initAuth(callback);
 }
 

@@ -79,7 +79,7 @@ class Menu {
     bottomElement.innerHTML = '';
     this.createMenuItems_(topElement, bottomElement);
   }
-  
+
   addUserMenu() {
     this.menuItems_.push(this.userMenuItem_);
     const topElement = document.getElementsByClassName('menu-top')[0];
@@ -898,7 +898,7 @@ class Menu {
                     sanitizeFilename(state.getTitleOrMid().toLowerCase());
                 const blob =
                     new Blob([JSON.stringify(state.pstate_)],
-                      {type: 'application/json'});
+                        {type: 'application/json'});
                 saveAs(blob, `${filename}.mipui`);
               },
             },
@@ -1757,7 +1757,7 @@ class Menu {
               callback: () => {
                 state.gesture =
                     new OverlayGesture(
-                      ct.mask, ct.mask.hidden, ct.mask.hidden.black);
+                        ct.mask, ct.mask.hidden, ct.mask.hidden.black);
               },
             },
             {

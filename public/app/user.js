@@ -92,7 +92,6 @@ function updateUserMenu() {
 }
 
 
-
 */
 
 let firebaseUi = null;
